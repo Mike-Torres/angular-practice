@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 buttonPress = false;
+log = [];
 
 
  ngOnInit() {
 
  }
- tap(){
-   this.buttonPress = true;
+  onToggleDetails(){
+    this.buttonPress = !this.buttonPress;
+    this.log.push(this.log.length + 1);
  }
 }

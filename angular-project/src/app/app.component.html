@@ -16,6 +16,12 @@
  <!--Easy way of solving Toggle -->
 <!-- <button class="btn btn-primary" (click)="buttonPress = !buttonPress">Display Details</button> -->
 
-<button class="btn btn-primary" (click)="buttonPress = !buttonPress">Display Details</button>
+<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
 <p *ngIf ='buttonPress'> This is the greatest content ever</p>
+<div  
+*ngFor="let logItem of log" 
+[ngStyle]="{backgroundColor: logItem >= 5 ? 'red' : 'green'}"
+[ngClass]="{'white-text': logItem >= 5}">
+{{ logItem }}  
+</div>
 
