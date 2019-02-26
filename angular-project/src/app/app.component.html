@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-xs-12">
       <label>UserName: </label>
@@ -11,5 +11,11 @@
     </div>
   </div>
 </div>
+--> 
 
+ <!--Easy way of solving Toggle -->
+<!-- <button class="btn btn-primary" (click)="buttonPress = !buttonPress">Display Details</button> -->
+
+<button class="btn btn-primary" (click)="buttonPress = !buttonPress">Display Details</button>
+<p *ngIf ='buttonPress'> This is the greatest content ever</p>
 
